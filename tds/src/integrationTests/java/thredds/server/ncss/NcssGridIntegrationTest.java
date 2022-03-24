@@ -71,7 +71,6 @@ public class NcssGridIntegrationTest {
     openBinaryNew(content, "Temperature_isobaric");
   }
 
-  @Ignore("TODO Fix S3 FeatureCollection index path")
   @Test
   public void checkS3GridWithNonTopLevelS3Key() throws IOException {
     String endpoint = TestOnLocalServer.withHttpPath(
@@ -81,7 +80,6 @@ public class NcssGridIntegrationTest {
     openBinaryNew(content, "Temperature_isobaric");
   }
 
-  @Ignore("TODO Fix S3 FeatureCollection index path")
   @Test
   public void checkS3GridWithTopLevelS3Key() throws IOException {
     String endpoint = TestOnLocalServer.withHttpPath(
