@@ -88,7 +88,7 @@
   </nj22Config -->
 
   <DiskCache>
-    <alwaysUse>false</alwaysUse>
+    <alwaysUse>true</alwaysUse>
     <scour>1 hour</scour>
     <maxSize>1 Gb</maxSize>
   </DiskCache>

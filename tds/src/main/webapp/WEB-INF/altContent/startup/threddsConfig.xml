@@ -178,14 +178,12 @@
   </JupyterNotebookService>
   -->
 
-  <!--
   <Opendap>
-    <ascLimit>50</ascLimit>
-    <binLimit>500</binLimit>
+    <ascLimit>10</ascLimit>
+    <binLimit>100</binLimit>
     <serverVersion>opendap/3.7</serverVersion>
   </Opendap>
-    -->
-  
+
   <!--
   The WCS Service is on by default.
   Also, off by default (and encouraged) is operating on a remote dataset.

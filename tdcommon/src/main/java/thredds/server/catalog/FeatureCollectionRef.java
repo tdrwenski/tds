@@ -38,7 +38,8 @@ import thredds.client.catalog.builder.AccessBuilder;
 import thredds.client.catalog.builder.DatasetBuilder;
 import thredds.featurecollection.FeatureCollectionConfig;
 import thredds.featurecollection.FeatureCollectionType;
-import thredds.inventory.CollectionSpecParser;
+import thredds.inventory.CollectionSpecParserAbstract;
+import thredds.inventory.CollectionSpecParsers;
 import ucar.nc2.util.AliasTranslator;
 import javax.annotation.concurrent.Immutable;
 import java.util.List;
@@ -65,7 +66,7 @@ public class FeatureCollectionRef extends CatalogRef {
                                                                          // spec="${cdmUnitTest}/ncss/CONUS_80km_nc/GFS_CONUS_80km_#yyyyMMdd_HHmm#.nc$"
                                                                          // />
 
-    CollectionSpecParser specp = new CollectionSpecParser(config.spec, null);
+    CollectionSpecParserAbstract specp = CollectionSpecParsers.create(config.spec, null);
     topDirectoryLocation = specp.getRootDir();
   }
 

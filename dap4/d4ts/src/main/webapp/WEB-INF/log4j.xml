@@ -14,7 +14,7 @@
 
   <!-- All normal logging messages go to threddsServlet.log -->
   <logger name="thredds">
-    <level value="INFO"/>
+    <level value="DEBUG"/>
   </logger>
 
   <logger name="ucar">
