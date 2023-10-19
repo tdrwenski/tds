@@ -11,65 +11,12 @@
     <cve>CVE-2020-5408</cve>
   </suppress>
   <suppress>
-    <notes><![CDATA[
-      file name: spring-core-5.3.20.jar
-      reason: resolved CVE - only valid if using HTTPInvokerServiceExporter
-      ]]></notes>
-    <packageUrl regex="true">^pkg:maven/org\.springframework/spring-core@.*$</packageUrl>
-    <cve>CVE-2016-1000027</cve>
-  </suppress>
-  <suppress>
     <notes><![CDATA[(
       file name: spring-web-5.3.20.jar
       reason: resolved CVE - only valid if using HTTPInvokerServiceExporter
       ]]></notes>
     <packageUrl regex="true">^pkg:maven/org\.springframework/spring-web@.*$</packageUrl>
     <cve>CVE-2016-1000027</cve>
-  </suppress>
-  <suppress>
-    <notes><![CDATA[
-      file name: tds-5.0.0-SNAPSHOT.war: chronicle-wire-2.17.5.jar
-      reason: not a chronicle-wire vulnerability (wire package for Android and iOS)
-      ]]></notes>
-    <packageUrl regex="true">^pkg:maven/net\.openhft/chronicle\-wire@.*$</packageUrl>
-    <cve>CVE-2018-8909</cve>
-    <cve>CVE-2020-15258</cve>
-    <cve>CVE-2020-27853</cve>
-    <cve>CVE-2021-21301</cve>
-    <cve>CVE-2021-32665</cve>
-    <cve>CVE-2021-32666</cve>
-    <cve>CVE-2021-32755</cve>
-    <cve>CVE-2021-41093</cve>
-    <cve>CVE-2022-23625</cve>
-    <cve>CVE-2022-31009</cve>
-  </suppress>
-  <suppress>
-    <notes><![CDATA[
-      file name: edal-coveragejson-1.4.2.1-SNAPSHOT.jar
-      reason: not an edal-java vulnerability (CVE is for a node-based CLI tool)
-      ]]></notes>
-    <packageUrl regex="true">^pkg:maven/uk\.ac\.rdg\.resc/edal\-coveragejson@.*$</packageUrl>
-    <cve>CVE-2020-7712</cve>
-  </suppress>
-  <suppress>
-    <notes><![CDATA[
-      file name: jettison-1.4.1.jar
-      reason: not a jettison vulnerability (CVE is for a node-based CLI tool)
-      ]]></notes>
-    <packageUrl regex="true">^pkg:maven/org\.codehaus\.jettison/jettison@.*$</packageUrl>
-    <cve>CVE-2020-7712</cve>
-  </suppress>
-  <suppress>
-    <notes><![CDATA[
-      file name example: taglibs-standard-impl-1.2.5.jar
-      reason: These CVEs are for a GO based project called tag (MP3/MP4/OGG/FLAC metadata parsing library).
-              False positive. See https://github.com/dhowden/tag/issues/77 (from first CVE listed)
-    ]]></notes>
-    <packageUrl regex="true">^pkg:maven/org\.apache\.taglibs/taglibs\-standard\-impl@.*$</packageUrl>
-    <cve>CVE-2020-29242</cve>
-    <cve>CVE-2020-29243</cve>
-    <cve>CVE-2020-29244</cve>
-    <cve>CVE-2020-29245</cve>
   </suppress>
   <suppress>
     <notes><![CDATA[
@@ -118,13 +65,6 @@
     ]]></notes>
     <packageUrl regex="true">^pkg:maven/org\.json/json@.*$</packageUrl>
     <cve>CVE-2022-45688</cve>
-  </suppress>
-  <suppress>
-    <notes><![CDATA[
-      file name: screenshot_sync
-      reason: False positive.  We do not use the fredsmith utils.
-    ]]></notes>
-    <cve>CVE-2021-4277</cve>
   </suppress>
   <suppress>
     <notes><![CDATA[
