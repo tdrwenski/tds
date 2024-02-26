@@ -1,0 +1,22 @@
+on: [pull_request]
+
+jobs:
+  tds-tests-windows:
+    name: TDS Tests on Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test with Gradle on Windows
+        uses: Unidata/thredds-test-action@v2
+        with:
+          java-vendor: 'temurin'
+          java-version: 14
+          build-tool: 'gradlew'
+          test-command: '-Dtds.content.root.path=$CONTENT_DIR -Dtds.test.gretty.container=tomcat9 --info --stacktrace testAll'
+        env:
+          CONTENT_DIR: ${{ github.workspace }}/tds/src/test/content
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: tds_windows_JUnit_Results_${{ github.sha }}
+          path: build/reports/allTests
