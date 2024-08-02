@@ -13,7 +13,7 @@ apply from: "$rootDir/gradle/any/shared-mvn-coords.gradle"
 repositories {
   mavenCentral()
   // uncomment for release process
-//  mavenLocal()
+  mavenLocal()
 
   // All of the hosted repositories below could be replaced with:
   //     url "https://artifacts.unidata.ucar.edu/repository/unidata-all/"

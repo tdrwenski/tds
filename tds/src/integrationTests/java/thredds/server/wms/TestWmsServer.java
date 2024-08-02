@@ -111,6 +111,7 @@ public class TestWmsServer {
     assertThat(new String(((byte[]) Arrays.copyOfRange(result, 1, 4)), Charset.forName("US-ASCII"))).isEqualTo("PNG");
   }
 
+  // TODO need to allow characters <> in gretty/tomcat
   @Test
   @Category(NeedsCdmUnitTest.class)
   public void testGetLegendGraphicWithSLD() {

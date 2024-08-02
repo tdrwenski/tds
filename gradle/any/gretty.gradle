@@ -59,6 +59,10 @@ gretty {
     sslKeyStorePassword = 'secret666'
     realmConfigFile = "$rootDir/gradle/gretty/tomcat/tomcat-users.xml"
 
+//    httpPort = 8081
+//    contextPath = "/thredds"
+//    serverConfigFile = "$rootDir/gradle/gretty/tomcat/tomcat.xml"
+
     // Write separate Jacoco execution data for the client and server components of the integration test.
     if (project.extensions.findByName('jacoco')) {  // Is the Jacoco plugin applied to the project?
       tasks.matching {
